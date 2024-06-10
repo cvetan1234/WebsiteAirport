@@ -1,0 +1,156 @@
+body{
+	background-color: #a6dced;
+	overflow: auto;
+	font-family: 'Tahoma';font-size: 22px;
+	overflow-x: hidden;
+}
+
+h1{
+	position: relative;
+	text-align: center;
+	font-size: 2vw;
+	z-index: 100;
+}
+
+img{
+	border-radius: 25px;
+}
+
+a{ 
+	cursor: default; 
+	color: black; 
+	text-decoration:none; 
+	z-index: 1;
+}
+
+table, td, th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed ;
+	width: 9.5vw;
+	margin: 2vh 0;
+	font-size: 1.2vw;
+	background-color: #FFD580;
+	z-index: 1;
+	text-align: center;
+}
+
+th{
+	cursor: pointer;
+	padding: 1vw;
+}
+
+th:first-child, td:first-child {
+	width: 2vw;
+}
+
+button {
+	background-color: #4FFFFFF;
+	border: none;
+	color: black;
+	width: 9.5vw;
+	height: 9.5vh;
+	padding: 1vw 2vw;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.1vw;
+	margin: 0.4vw 0.2vw;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.navigation{
+	border-radius: 25px;
+	background-color: #FFD580;
+	width: 20vw;
+	height: 10vh;
+	margin: 2vh 1vw 2vh 1vw;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 1.5vw;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.container{
+	display: flex;
+	background-color: #a6dced;
+	justify-content: center;
+}
+
+.boxtype1{
+	border-radius: 25px;
+	background-color: #FFD580;
+	width: 31vw;
+	height: 40vh;
+	margin: 2vh 1vw 2vh 1vw;
+	text-align: center;
+	line-height: 4.4vh;
+	font-size: 1vw;
+	z-index: 1;
+}
+
+.boxtype2{
+	border-radius: 25px;
+	background-color: #FFD580;
+	width: 64vw;
+	height: 12vh;
+	margin: 2vh 0;
+	text-align: center;
+	line-height: 5vh;
+	font-size: 1.2vw;
+	display: flex;
+	z-index: 1;
+	justify-content: center;
+}
+
+.boxtype2_contaier{
+	padding: 2px;
+	width: 10vw;
+}
+
+.boxtype3{
+	border-radius: 25px;
+	background-color: #FFD580;
+	width: 25vw;
+	margin: 2vh 1vw;
+	text-align: center;
+	line-height: 5vh;
+	font-size: 1.2vw;
+	z-index: 1;
+}
+
+.inputValue{
+	width: 7vw;
+	height: 3vh;
+	font-size: 1vw;
+}
+
+.paragraph{
+	line-height: 2hv;
+	margin: 0px;
+}
+
+.circle {
+	position: absolute;
+	background-color: #FF69B4; 
+	opacity: 0.5;
+	border-radius: 50%; 
+}
+
+#buttonBackToTop{
+	background-color: #FFD580;
+	width: 10vw;
+	margin: 2vh 1vw;
+	text-align: center;
+	line-height: 2.5vh;
+	font-size: 0.8vw;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 100;
+}
+
+#nameInFooter{
+	font-size: 1vw;
+	z-index: 1;
+}

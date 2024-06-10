@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>Airport</title>
+        <meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"> <!-- connection with the css file -->
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="title"><h1>Airport</h1></div>
+		</header>
+		
+		<nav>
+			<div class="container">
+				<a href="#description"><div class="navigation">Description</div></a>
+				<a href="#tbl"><div class="navigation">Table</div></a>
+				<a href="#statistics"><div class="navigation">Statistics</div></a>
+			</div>
+		</nav>
+		
+		<main>
+			<div class="container">
+				<div class = "boxtype1" id="description"><label>This website is a plan showing the arrivals and departures for a day at an airport. Flight information can be entered in two ways: we can enter information manually for a given flight, or also randomly generate flights. There are two ways for deleting flights from the table: we can delete a selected single row, or delete the first n number of rows. The table can be sorted by column by clicking on the column title. There is some statistical information about the flights below the table. By clicking the “Open print view” a window to print the table is opened.</label></div>
+				<div class = "boxtype1"><img src="airplaneImg.jpg" alt="Aiplane image" width = "100%" height = "100%"></div>
+			</div>
+			<div class="container">
+				<div class = "boxtype2">
+					<div class = "boxtype2_contaier">
+							<label for="inputTime">Time: </label>
+							<input type="time" id="inputTime" class="inputValue" value="10:00"/>
+					</div>
+					<div class = "boxtype2_contaier">
+							<label for="inputAD"> Arrival/Departure: </label>
+							<select id="inputAD" class="inputValue">
+								<option value="Arrival">Arrival</option>
+								<option value="Departure">Departure</option>
+							</select>
+					</div>
+					<div class = "boxtype2_contaier">
+							<label for="inputDest"> Destination/Origin: </label>
+							<input type="text" id="inputDest" value="Amberg" class="inputValue"/>
+					</div>
+					<div class = "boxtype2_contaier">
+							<label for="inputDur"> Duration: </label>
+							<input type="time" id="inputDur" value="02:00" class="inputValue"/>
+					</div>
+					<div class = "boxtype2_contaier">
+							<label for="inputAirplane"> Airplane: </label>
+							<select id="inputAirplane" class="inputValue">
+								<option value="Airbus A320">Airbus A320</option>
+								<option value="Airbus A350">Airbus A350</option>
+								<option value="Boeing 737">Boeing 737</option>
+								<option value="Boeing 777">Boeing 777</option>
+							</select>
+					</div>
+					<div class = "boxtype2_contaier">
+							<button onclick="addToTable()">Add to the table</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class = "boxtype2">
+					<div class = "boxtype2_contaier">
+						<label for="inputNumRandomRows"> Create rows: </label>
+						<input type="number" value="1" id="inputNumRandomRows" class = "inputValue"/>
+					</div>
+					<div class = "boxtype2_contaier">
+						<button onclick="randomRows()">Create rows</button>
+					</div>
+					<div class = "boxtype2_contaier">
+						<label for="inputDelete"> Delete rows: </label>
+						<input type="number" value="1" id="inputDelete" class = "inputValue"/>
+					</div>
+					<div class = "boxtype2_contaier">
+						<button onclick="deleteRow()">Delete single row</button>
+					</div>
+					<div class = "boxtype2_contaier">
+						<button onclick="deleteFirstNRows()">Delete first n rows</button>
+					</div>
+					<div class = "boxtype2_contaier">
+						<button onclick="openPrintView()">Open print view</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<table id = "tbl">
+						<tr>
+							<th onclick="sortTable(0)" >№</th>
+							<th onclick="sortTable(1)">Time</th>
+							<th onclick="sortTable(2)">Arr/Dep</th>
+							<th onclick="sortTable(3)">Dest./Origin</th>
+							<th onclick="sortTable(4)">Duration</th>
+							<th onclick="sortTable(5)">Plane</th>
+						</tr>
+				</table>
+			</div>
+			<div class="container">
+				<div class="boxtype3" id="statistics">
+					<p id = "paragraph1" class="paragraph"></p>
+					<p id = "paragraph2" class="paragraph"></p>
+					<p id = "paragraph3" class="paragraph"></p>
+					<p id = "paragraph4" class="paragraph"></p>
+					<p id = "paragraph5" class="paragraph"></p>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<div class = "container">
+				<label id="nameInFooter">© 2023 by Tsvetan Stanchev</label>
+			</div>
+			<div class = "container">
+				<a href="#title"><div id="buttonBackToTop">Back to top of page</div></a>
+			</div>
+		</footer>
+		
+		<script src="script.js"></script> <!-- connection with the js file -->
+
+	</body>
+	
+</html>
