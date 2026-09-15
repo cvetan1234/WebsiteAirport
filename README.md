@@ -89,7 +89,3 @@ The website runs locally using HTML, CSS, and JavaScript.
 6. Use **Delete first n rows** to remove multiple flights from the beginning of the table.
 7. View automatically calculated flight statistics below the table.
 8. Click **Open print view** to open a printable version of the current flight schedule.
-
-## About
-
-This project demonstrates fundamental front-end web development concepts, including HTML page structure, CSS styling, JavaScript event handling, DOM manipulation, dynamic table generation, sorting, input handling, and basic data analysis.
