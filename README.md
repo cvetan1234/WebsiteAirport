@@ -4,7 +4,7 @@ A web application for managing and displaying daily airport arrivals and departu
 
 The website allows users to manually enter flight information or automatically generate random flights. Flights are displayed in an interactive table that can be sorted and modified, while statistics about the current flight schedule are calculated automatically.
 
-This project was originally developed as a university web programming project for Ostbayerische Technische Hochschule Amberg-Weiden (OTH Amberg-Weiden).
+This project was originally developed as a university web programming project for the Web Technologies module at Ostbayerische Technische Hochschule Amberg-Weiden (OTH Amberg-Weiden).
 
 ## Features
 
